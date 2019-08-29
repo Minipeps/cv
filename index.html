@@ -4,11 +4,20 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <!-- <meta http-equiv="refresh" content="3" > --> 
+    <meta http-equiv="refresh" content="3" >
     
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
     <title>Porfolio</title>
+
+    <script src="node_modules\jquery\dist\jquery.js"></script> 
+    <script> 
+        $(function(){
+        $("#portfolio").load("portfolio.html"); 
+        });
+    </script> 
+
+
 </head>
 <body>
 
@@ -17,10 +26,11 @@
 <div id="content">
     <div class="element" id="menu">
     Menu
+
     </div>
 
     <div class="element" id="main">
-    Main
+        <div id="portfolio"></div>
     </div>
 </div>
 
